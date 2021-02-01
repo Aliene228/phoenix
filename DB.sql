@@ -34,14 +34,14 @@ CREATE TABLE "status_log" (
 
 
 
-CREATE TABLE "histori" (
+CREATE TABLE "trouble_histori" (
 	"id" int NOT NULL,
 	"dat" date NOT NULL,
 	"status" varchar(100) NOT NULL,
 	"id_trouble" int NOT NULL,
 	"human_id" int NOT NULL,
 	"human_contact" int NOT NULL,
-	CONSTRAINT "histori_pk" PRIMARY KEY ("id")
+	CONSTRAINT "trouble_histori_pk" PRIMARY KEY ("id")
 ) WITH (
   OIDS=FALSE
 );
@@ -64,7 +64,7 @@ ALTER TABLE "trouble" ADD CONSTRAINT "trouble_fk2" FOREIGN KEY ("status_id") REF
 
 
 
-ALTER TABLE "histori" ADD CONSTRAINT "history_fk0" FOREIGN KEY ("id") REFERENCES "trouble"("id");
-ALTER TABLE "histori" ADD CONSTRAINT "history_fk1" FOREIGN KEY ("human_id") REFERENCES "human"("id");
+ALTER TABLE "trouble_histori" ADD CONSTRAINT "trouble_histori_fk0" FOREIGN KEY ("id") REFERENCES "trouble"("id");
+ALTER TABLE "trouble_histori" ADD CONSTRAINT "trouble_histori_fk1" FOREIGN KEY ("human_id") REFERENCES "human"("id");
 
 
