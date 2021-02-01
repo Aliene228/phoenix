@@ -1,6 +1,6 @@
 CREATE TABLE "trouble" (
 	"id" int IDENTITY(1,1) NOT NULL,
-	"geo" varchar NOT NULL,
+	"geo" geography NOT NULL,
 	"dat" date NOT NULL,
 	"info" varchar(100) NOT NULL,
 	"contact_id" int NOT NULL,
