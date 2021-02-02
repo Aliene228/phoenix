@@ -1,6 +1,6 @@
 CREATE TABLE "trouble" (
-	"id" int IDENTITY(1,1) NOT NULL,
-	"geo" ? NOT NULL,
+	"id" serial  NOT NULL,
+	"geo" double precision NOT NULL,
 	"dat" date NOT NULL,
 	"info" varchar(100) NOT NULL,
 	"contact_id" int NOT NULL,
@@ -13,7 +13,7 @@ CREATE TABLE "trouble" (
 
 
 CREATE TABLE "contact" (
-	"id" int IDENTITY(1,1) NOT NULL,
+	"id" serial NOT NULL,
 	"name" varchar(50) NOT NULL,
 	"phone" varchar(15) NOT NULL,
 	"mail" varchar(50) NOT NULL,
@@ -25,7 +25,7 @@ CREATE TABLE "contact" (
 
 
 CREATE TABLE "status_log" (
-	"id" int IDENTITY(1,1) NOT NULL,
+	"id" serial NOT NULL,
 	"status" varchar(100) NOT NULL,
 	CONSTRAINT "status_log_pk" PRIMARY KEY ("id")
 ) WITH (
@@ -35,7 +35,7 @@ CREATE TABLE "status_log" (
 
 
 CREATE TABLE "trouble_histori" (
-	"id" int IDENTITY(1,1) NOT NULL,
+	"id" serial NOT NULL,
 	"dat" date NOT NULL,
 	"status" varchar(100) NOT NULL,
 	"id_trouble" int NOT NULL,
@@ -49,7 +49,7 @@ CREATE TABLE "trouble_histori" (
 
 
 CREATE TABLE "human" (
-	"id" int IDENTITY(1,1) NOT NULL,
+	"id" serial NOT NULL,
 	"fio" varchar(100) NOT NULL,
 	CONSTRAINT "human_pk" PRIMARY KEY ("id")
 ) WITH (
