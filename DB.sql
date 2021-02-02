@@ -34,7 +34,7 @@ CREATE TABLE "status_log" (
 
 
 
-CREATE TABLE "trouble_histori" (
+CREATE TABLE "trouble_history" (
 	"id" serial NOT NULL,
 	"dat" date NOT NULL,
 	"status" varchar(100) NOT NULL,
