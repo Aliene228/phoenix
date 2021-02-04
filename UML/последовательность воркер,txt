@@ -1,0 +1,5 @@
+@startuml
+actor Worker
+Server -> Worker : Отправляет список проблем
+Worker -> Server : Изменяет состояние проблемы
+@enduml
