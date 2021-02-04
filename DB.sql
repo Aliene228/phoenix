@@ -1,6 +1,6 @@
 CREATE TABLE "trouble" (
 	"id" serial  NOT NULL,
-	"geo" double precision NOT NULL,
+	"geo" float NOT NULL,
 	"dat" date NOT NULL,
 	"info" varchar(100) NOT NULL,
 	"contact_id" int NOT NULL,
