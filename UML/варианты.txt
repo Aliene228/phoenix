@@ -1,0 +1,8 @@
+@startuml
+Actor User
+User --> (List problem)
+User --> (Send problem)
+Actor Worker
+Worker --> (Search problem)
+Worker --> (Change status)
+@enduml
