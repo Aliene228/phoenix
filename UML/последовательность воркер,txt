@@ -1,5 +1,7 @@
 @startuml
 actor Worker
-Server -> Worker : Отправляет список проблем
-Worker -> Server : Изменяет состояние проблемы
+Worker -> Server : Звпрашивает список проблем
+Server --> Worker : Отправляет список проблем
+Worker -> Server : Изменяет состояние проблемы и запрашивает ответ от сервера
+Server --> Worker : Отправляет измененный список проблем
 @enduml
