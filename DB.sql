@@ -3,7 +3,7 @@ CREATE TABLE "trouble" (
 	"geo_longitude" real NOT NULL,
 	"geo_latitude" real NOT NULL,
 	"dat" date NOT NULL,
-	"info" varchar(100) NOT NULL,
+	"info" varchar(255) NOT NULL,
 	"contact_id" int NOT NULL,
 	"status_id" int NOT NULL,
 	CONSTRAINT "trouble_pk" PRIMARY KEY ("id")
