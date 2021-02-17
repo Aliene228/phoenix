@@ -1,0 +1,62 @@
+body{
+	font-size: 26px;
+	font-family: 'Noto Sans JP', sans-serif;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+.menu{
+	background: #5f19aa;
+	padding-top: 45px;
+	padding-bottom: 45px;
+}
+.menu_text{
+	color: white;
+	text-decoration: none;
+	border-bottom: 0 !important;
+    border-left: medium transparent solid;
+    padding: 15px !important;
+
+}
+.menu_text:hover{
+	color: white;
+	text-decoration: none;
+	border-bottom: 0 !important;
+    border-left: medium transparent solid;
+    border-top: thin #9d9fa2 solid;
+    padding: 15px !important;
+
+}
+h1{
+	padding-top: 45px;
+	padding-bottom: 45px;
+	font-size: 36px;
+}
+.trouble{
+	float: right;
+	padding-top: 20px;
+	padding-bottom: 110px;
+	padding-right: 180px;
+	margin-top:-180px;
+	font-size: 16px;
+}
+input{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 5px;
+}
+form{
+	padding-top: 50px;
+	padding-left: 50px;
+}
+.but{
+    background-color: #5f19aa;
+    color: white;
+    border-radius: 3px;
+    font-size: 25px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-left: 40%;
+}

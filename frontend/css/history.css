@@ -1,0 +1,100 @@
+body{
+	font-size: 26px;
+	font-family: 'Noto Sans JP', sans-serif;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+.menu{
+	background: #5f19aa;
+	padding-top: 45px;
+	padding-bottom: 45px;
+}
+.menu_text{
+	color: white;
+	text-decoration: none;
+	border-bottom: 0 !important;
+    border-left: medium transparent solid;
+    padding: 15px !important;
+
+}
+.menu_text:hover{
+	color: white;
+	text-decoration: none;
+	border-bottom: 0 !important;
+    border-left: medium transparent solid;
+    border-top: thin #9d9fa2 solid;
+    padding: 15px !important;
+
+}
+h1{
+	padding-top: 45px;
+	padding-bottom: 45px;
+	font-size: 36px;
+}
+
+input{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 5px;
+}
+
+.but{
+    background-color: #5f19aa;
+    color: white;
+    border-radius: 3px;
+    font-size: 25px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+
+    float: left;
+}
+/*table*/
+table { 
+	width: 750px; 
+	border-collapse: collapse; 
+	margin:50px auto;
+	}
+
+th { 
+	background: #ed973e; 
+	color: white; 
+	font-weight: bold;
+	 
+	}
+
+td, th { 
+	padding: 10px; 
+	border: 1px solid #ccc; 
+	text-align: left; 
+	font-size: 18px;
+	}
+
+.labels tr td {
+	background-color:  #ed973e;
+	font-weight: bold;
+	color: #fff;
+}
+
+.label tr td label {
+	display: block;
+}
+
+
+[data-toggle="toggle"] {
+	display: none;
+}
+.link_table{
+	color: #ed973e;
+	text-decoration: none;
+	
+
+}
+.lt1{
+	padding-left: 350px;
+}
+form {
+	padding-top: 50px;
+}
