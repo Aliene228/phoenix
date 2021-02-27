@@ -8,6 +8,8 @@
   	<link rel="stylesheet" type="text/css" href="css/history.css">
   	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+	 <script src="https://api-maps.yandex.ru/2.1/?apikey=fd10c427-1165-4892-8ebe-83199a241db3&lang=ru_RU" type="text/javascript">
+    </script>
 	
 </head>
 <body>
@@ -156,8 +158,17 @@
 			<div class="row">
 				<div class="col-md-12">
 					<h1 class="animate__animated animate__bounce">Все проблемы</h1>
-					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9787cd9bcf372d1b03778f5143b1eb97a57328382ff9c8b596f1eaa3e90b6c9c&amp;width=100%&amp;height=400&amp;lang=ru_UA&amp;scroll=true">
-					</script>	
+					<div id="map" style="width: 100%; height: 400px">
+						<script type="text/javascript">
+    ymaps.ready(init);
+    function init(){
+        var myMap = new ymaps.Map("map", {  
+            center: [48.015877, 37.802850],
+            zoom: 12
+        });
+    }
+</script>
+					 </div>	
 				</div>
 			</div>
 </div>
